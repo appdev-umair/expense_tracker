@@ -6,6 +6,10 @@ var kDarkColorScheme = ColorScheme.fromSeed(
     brightness: Brightness.dark, seedColor: Colors.deepPurple);
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // SystemChrome.setPreferredOrientations([
+  //   DeviceOrientation.portraitUp,
+  // ]).then((value) {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -13,7 +17,7 @@ void main() {
         useMaterial3: true,
         colorScheme: kDarkColorScheme,
         appBarTheme: const AppBarTheme().copyWith(
-            backgroundColor: kDarkColorScheme.primaryContainer,
+            backgroundColor: kDarkColorScheme.secondaryContainer,
             foregroundColor: kDarkColorScheme.onPrimaryContainer),
         cardTheme: const CardTheme().copyWith(
           color: kDarkColorScheme.secondaryContainer,
